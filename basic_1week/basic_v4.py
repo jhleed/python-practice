@@ -21,3 +21,21 @@ def help():
 
 
 call_function(help)
+
+
+def get_name():
+    name = "종호"
+    return name
+
+
+who = get_name()
+print(who)
+
+
+def multi():
+    return "a", "b"
+
+
+a, b = multi()
+
+print(a, b)
