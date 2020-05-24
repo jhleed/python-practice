@@ -2,6 +2,7 @@ class B_school():
 
     # 지정함수, 클래스가 생성될 때 초기화
     def __init__(self):
+        self.school_name = "b 학교"
         print("b 대학교 초기화")
 
 
@@ -16,10 +17,12 @@ class A_school():
 
         b = self.math()
         print("수학과 학생 %s" % b)
-        print(self.student1_name)
+
+        b_school = B_school()
+        print(b_school.school_name)
 
         # dir 은 매개변수로 전달된 정보에 어떤 데이터가 있는지 보여준다.
-        print(dir(self))
+        # print(dir(self))
 
     def math(self):
         self.student1_name = "영수"
